@@ -5,7 +5,7 @@ pipeline {
         stage ('Example') {
             steps {
                 echo "cloning git repo"
-                git credentialsId: 'shakeersreboot', url: 'https://github.com/gitjenkins-cicd/Testgitpush.git'
+                git branch: 'main', credentialsId: 'shakeersreboot', url: 'https://github.com/gitjenkins-cicd/Testgitpush.git'
                 }
             }
         }
