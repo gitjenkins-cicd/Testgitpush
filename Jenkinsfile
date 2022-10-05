@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo "cloning git repo"
                 git branch: 'main', credentialsId: 'shakeersreboot', url: 'https://github.com/gitjenkins-cicd/Testgitpush.git'
-                sh "ls -lrth"
+                sh "ls -a"
                 }
             }
         }
