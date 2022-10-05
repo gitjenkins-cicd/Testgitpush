@@ -12,7 +12,7 @@ pipeline {
                 //sh 'git merge main'
                 sh "git add -A"
                 //sh "git commit -am 'Merged develop branch to main'"
-                sh "git remote add origin https://github.com/gitjenkins-cicd/Testgitpush.git"
+                //sh "git remote add origin https://github.com/gitjenkins-cicd/Testgitpush.git"
                 sh "git push --set-upstream origin main"
                 sh "ls -a"
                 }
