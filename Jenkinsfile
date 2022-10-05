@@ -10,6 +10,7 @@ pipeline {
                 //sh "git push branch: 'main', credentialsId: 'shakeersreboot', url: 'https://github.com/gitjenkins-cicd/Testgitpush.git'"
                 sh "git tag -a 17 -m 'merging downloads'"
                 //sh 'git merge main'
+                sh "git add -A"
                 sh "git commit -am 'Merged develop branch to main'"
                 sh "git push origin main"
                 sh "ls -a"
